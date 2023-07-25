@@ -1,0 +1,39 @@
+[prometheus]
+  disable = true
+
+[influxdb]
+  url  = "<%= @influx_url %>"
+  token = "<%= @influx_token %>"
+  org = "<%= @influx_org %>"
+  bucket = "<%= @influx_bucket %>"
+  verify_ssl = true
+  interval = "1m"
+  dead_ports = false
+
+[loki]
+  url = "<%= @loki_url %>"
+  user       = "<%= @loki_user %>"
+  pass       = "<%= @loki_password %>"
+  verify_ssl = true
+  tenant_id  = ""
+  interval   = "2m"
+  timeout    = "10s"
+
+[unifi]
+  dynamic = false
+
+[unifi.controller]
+  url = "<%= @unifi_url %>"
+  user = "<%= @unifi_user %>"
+  pass = "<%= @unifi_password %>"
+  sites = ["all"]
+  save_sites = true
+  hash_pii = false
+  save_ids = false
+  save_events = true
+  save_alarms = false
+  save_anomalies = false
+  save_dpi = false
+  save_rogue = false
+  verify_ssl = true
+
