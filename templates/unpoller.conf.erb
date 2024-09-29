@@ -1,14 +1,10 @@
 [prometheus]
-  disable = true
+  http_listen = "0.0.0.0:9130"
+  report_errors = true
+  dead_ports = false
 
 [influxdb]
-  url  = "<%= @influx_url %>"
-  auth_token = "<%= @influx_token %>"
-  org = "<%= @influx_org %>"
-  bucket = "<%= @influx_bucket %>"
-  verify_ssl = true
-  interval = "1m"
-  dead_ports = false
+  disable = true
 
 [loki]
   url = "<%= @loki_url %>"
