@@ -37,8 +37,8 @@ class unpoller (
     jump   => 'DNAT',
     proto  => 'tcp',
     source => $prometheus_server_ip,
-    dport  => 1883,
-    todest => "${ip}:1883",
+    dport  => 6130,
+    todest => "${ip}:6130",
     table  => 'nat',
   }
 }
