@@ -7,7 +7,7 @@
 # @param unifi_user sets the username for Unifi auth
 # @param unifi_password sets the password for Unifi auth
 # @param ip sets the IP of the unpoller container
-# @prometheus_server_ip sets the IP range to allow for prometheus connections
+# @param prometheus_server_ip sets the IP range to allow for prometheus connections
 class unpoller (
   String $loki_url,
   String $loki_user,
