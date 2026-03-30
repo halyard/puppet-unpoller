@@ -1,16 +1,12 @@
 {
   "name": "halyard-unpoller",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "author": "Les Aker",
   "license": "MIT",
   "summary": "Configure unpoller",
   "source": "https://github.com/halyard/puppet-unpoller",
   "project_page": "https://github.com/halyard/puppet-unpoller",
   "issues_url": "https://github.com/halyard/puppet-unpoller/issues",
-  "dependencies": [
-
-  ],
-  "operatingsystem_support": [
-
-  ]
+  "dependencies": [],
+  "operatingsystem_support": []
 }
